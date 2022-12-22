@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.ts"></script>
+    <title>Today's Service</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div>
+                <h1>Today's Service</h1>
+                <div style="width: 200px;">
+                    <h4>Data Inicial:</h4>
+                    <input type="date" id="initialDate">
+                </div>
+
+                <div style="width: 200px;">
+                    <h4>Data Final:</h4>
+                    <input type="date" id="initialDate">
+                </div>
+
+                <div style="width: 240px;">
+                    <h4>Unidade de Medida:</h4>
+                    <select name="unitType" id="unitType">
+                        <option value="quantity">Quantidade</option>
+                        <option value="hours">Horas</option>
+                    </select>
+                </div>
+
+                <div style="width: 240px;">
+                    <h4>Frequência:</h4>
+                    <select name="frequency" id="frequency" onchange="frequencyChanged($event)">
+                        <option value="daily">Diariamente</option>
+                        <option value="workingDays">Dias úteis</option>
+                        <option value="weekly">Semanalmente</option>
+                        <option value="fortnightly">Quinzenalmente</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </header>
+    </div>
+</body>
+</html>
